@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="bg-dark">
+
+    <div class="container mt-5 p-3 bg-info ">
+        <div >
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="basic-addon1">Search By name</span>
+                </div>
+                <input value="" id="customerName" type="text" class="form-control" placeholder="Customer Name"
+                    aria-label="CustomerName" aria-describedby="basic-addon1">
+            </div>
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="basic-addon2">Search By amount</span>
+                </div>
+                <input value="" id="CustomerAmount" type="number" class="form-control" placeholder="Customer Amount"
+                    aria-label="CustomerAmount" aria-describedby="basic-addon1">
+            </div>
+    
+            <table class="myTable table text-center border border-dark ">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Customer</th>
+                        <th scope="col">Total amount of Transaction</th>
+                        <!-- <th scope="col">Transaction Date</th> -->
+                        <th scope="col">number of transactions</th>
+                    </tr>
+                </thead>
+                <tbody class="body-data">
+    
+                </tbody>
+            </table>
+    
+            <div class="btn">
+                <button id="display" class="btn bg-primary text-white">Display all data</button>
+            </div>
+        </div>
+
+        <div class="chart bg-light m-4">
+            <div>
+                <canvas id="myChart"></canvas>
+            </div>
+        </div>
+    </div>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/react/18.3.1/cjs/react.production.min.js" integrity="sha512-UXVw2YAwq8jIwJQ0HABWhSK7L/VB9f6JG0WuXk7ol4/Kbad5FljxwgujA2eLF8xEi8i3Gb10GFdIKlVDjaVHMA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+    <!-- <script src="chart.js"></script> -->
+</body>
+
+</html>
